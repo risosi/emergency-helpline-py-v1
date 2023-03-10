@@ -1,6 +1,6 @@
 from PIL import ImageTk
 import tkinter as tk
-
+import customtkinter as cTk
 root = tk.Tk()
 
 root.title('Helpline')
@@ -32,25 +32,46 @@ frame2.place(relx=0.5,rely=0.6,anchor=tk.CENTER)
 #frame2.pack(side='top',fill='both')
 frame2.grid_propagate(False)
 
-tk.Button(frame2,
-text="999"
+#button = cTk.CTkButton(master=frame1, text="CTkButton", command=None)
+#button.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+
+cTk.CTkButton(master=frame2,
+text="999",
+height=50,
+width=140,
+font=('TkMenuFont',30)
 ).place(relx=0.5,rely=0.3,anchor=tk.CENTER)
-tk.Button(frame2,
-text="999"
+cTk.CTkButton(master=frame2,
+text="999",
+height=50,
+width=140,
+font=('TkMenuFont',30)
 ).place(relx=0.2,rely=0.3,anchor=tk.CENTER)
-tk.Button(frame2,
-text="999"
+cTk.CTkButton(master=frame2,
+text="999",
+height=50,
+width=140,
+font=('TkMenuFont',30)
 ).place(relx=0.8,rely=0.3,anchor=tk.CENTER)
 
 
-tk.Button(frame2,
-text="999"
+cTk.CTkButton(master=frame2,
+text="999",
+height=50,
+width=140,
+font=('TkMenuFont',30)
 ).place(relx=0.5,rely=0.6,anchor=tk.CENTER)
-tk.Button(frame2,
-text="999"
+cTk.CTkButton(master=frame2,
+text="999",
+height=50,
+width=140,
+font=('TkMenuFont',30)
 ).place(relx=0.2,rely=0.6,anchor=tk.CENTER)
-tk.Button(frame2,
-text="999"
+cTk.CTkButton(master=frame2,
+text="999",
+height=50,
+width=140,
+font=('TkMenuFont',30)
 ).place(relx=0.8,rely=0.6,anchor=tk.CENTER)
 
 
