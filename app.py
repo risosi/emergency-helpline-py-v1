@@ -9,9 +9,9 @@ root['bg']='#ffffff'
 #root.geometry('500x750+'+str(root.winfo_screenwidth()//2)+'+'+str(int(root.winfo_screenheight()*0.1)))
 
 frame1 = tk.Frame(root, height=350, width=500,bg="#ffffff")
-frame1.place(relx=0.5,rely=0.3,anchor=tk.CENTER)
+# frame1.place(relx=0.5,rely=0.3,anchor=tk.CENTER)
 #grid(row=0,column=0)
-#pack(side='top',fill='both')
+frame1.pack(side='top',fill='both')
 frame1.pack_propagate(False)
 
 logo = ImageTk.PhotoImage(file='./assets/banner2.jpg')
@@ -24,11 +24,12 @@ logo_widget.pack()
 cTk.CTkLabel(frame1,
 text="All Helplines are hear",
 font=("Roboto black",50),
-pady=35).pack()
+pady=35,
+text_color="#000000").pack()
 
 frame2=tk.Frame(root,width=500,height=500,bg="#ffffff")
-frame2.place(relx=0.5,rely=0.6,anchor=tk.CENTER)
-#frame2.pack(side='top',fill='both')
+# frame2.place(relx=0.5,rely=0.6,anchor=tk.CENTER)
+frame2.pack(side='top',fill='both')
 frame2.grid_propagate(False)
 
 #button = cTk.CTkButton(master=frame1, text="CTkButton", command=None)
