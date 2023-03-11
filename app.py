@@ -30,10 +30,10 @@ def load_frame3():
     frame3.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
     frame3.pack_propagate(False)
     
-    vl=tk.Label(master=frame3)
-    vl.pack()
-    player = tkvideo("assets/t.mp4",vl,loop=1,size=(500,200))
-    player.play()
+    # vl=tk.Label(master=frame3)
+    # vl.pack()
+    # player = tkvideo("assets/t.mp4",vl,loop=1,size=(500,200))
+    # player.play()
 
     
     
